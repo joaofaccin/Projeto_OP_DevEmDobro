@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" type="image/x-icon" href="./src/imagens/icon2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
@@ -18,33 +18,16 @@
 </head>
 
 <body>
-    <audio controls autoplay loop>
-        <source src="./src/midia/OpEding.mp3" type="audio/mpeg">
+    <audio id="song">
+        <source src="./src/midia/OpEding.mp3">
     </audio>
+    <script>
+        window.addEventListener('click', () => {
+            document.getElementById("song").play()
+        });
+    </script>
 
     <main class="personagens">
-        <div class="personagem">
-            <img class="imagem" src="./src/imagens/personagem-tony-chopper.png" alt="Personagem Tony Chopper">
-            <div class="conteudo">
-                <i class="logo"></i>
-                <h2 class="nome-personagem">Tony Tony Chopper</h2>
-                <p class="descricao">Tony Tony Chopper, também conhecido como "Amante de Algodão Doce", é um personagem fictício 
-                    da série de mangá One Piece criada por Eiichiro Oda. Ele é o sexto membro a se juntar e o médico dos Piratas do Chapéu de Palha. 
-                    Chopper é freqüentemente apresentado  em mercadorias oficiais, servindo como mascote da série.</p>
-            </div>
-        </div>
-
-        <div class="personagem">
-            <img class="imagem" src="./src/imagens/personagem-roronoa-zoro.png" alt="Personagem Roronoa Zoro">
-            <div class="conteudo">
-                <i class="logo"></i>
-                <h2 class="nome-personagem">Roronoa Zoro</h2>
-                <p class="descricao">Roronoa Zoro, é um personagem fictício da série One Piece criada por Eiichiro Oda.
-                     Na história, Zoro era um caçador de piratas que por fim se torna um quando é convencido pelo protagonista Monkey D. Luffy 
-                     a ser o primeiro membro de sua tripulação, os Piratas do Chapéu de Palha.</p>
-            </div>
-        </div>
-
         <div class="personagem selecionado">
             <img class="imagem" src="./src/imagens/personagem-monkey-d-luffy.png" alt="Personagem Monkey D. Luffy">
             <div class="conteudo">
@@ -55,7 +38,17 @@
                     frutas amaldiçoadas conhecidas como Akuma no Mi ou Frutas do Diabo.</p>
             </div>
         </div>
-
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/personagem-roronoa-zoro.png" alt="Personagem Roronoa Zoro">
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="nome-personagem">Roronoa Zoro</h2>
+                <p class="descricao">Roronoa Zoro, é um personagem fictício da série One Piece criada por Eiichiro Oda.
+                     Na história, Zoro era um caçador de piratas que por fim se torna um quando é convencido pelo protagonista Monkey D. Luffy 
+                     a ser o primeiro membro de sua tripulação, os Piratas do Chapéu de Palha.</p>
+            </div>
+        </div>
+        
         <div class="personagem">
             <img class="imagem" src="./src/imagens/personagem-nami.png" alt="Personagem Nami">
             <div class="conteudo">
@@ -66,7 +59,6 @@
                     mas que possui motivos nobres por trás de suas ações ambíguas. </p>
             </div>
         </div>
-
         <div class="personagem">
             <img class="imagem" src="./src/imagens/personagem-sanji.png" alt="Personagem Sanji">
             <div class="conteudo">
@@ -77,6 +69,16 @@
                     e depois passa a trabalhar para o capitão Monkey D. Luffy no seu bando dos Piratas do Chapéu de Palha.</p>
             </div>
         </div>
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/personagem-tony-chopper.png" alt="Personagem Tony Chopper">
+            <div class="conteudo">
+                <i class="logo"></i>
+                <h2 class="nome-personagem">Tony Tony Chopper</h2>
+                <p class="descricao">Tony Tony Chopper, também conhecido como "Amante de Algodão Doce", é um personagem fictício 
+                    da série de mangá One Piece criada por Eiichiro Oda. Ele é o sexto membro a se juntar e o médico dos Piratas do Chapéu de Palha. 
+                    Chopper é freqüentemente apresentado  em mercadorias oficiais, servindo como mascote da série.</p>
+            </div>
+        </div>  
         <div class="personagem">
             <img class="imagem" src="./src/imagens/law_walpaper.jpg" alt="Personagem Law">
             <div class="conteudo">
@@ -120,7 +122,9 @@
                 <img src="./src/imagens/Law.png" alt="Tripulação Law">
             </button>
         </li>
+      
     </ul>
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
